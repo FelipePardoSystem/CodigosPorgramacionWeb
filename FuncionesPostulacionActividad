@@ -1,0 +1,28 @@
+function postulacion(){
+    var nombre= document.getElementById(nombre).value
+    var apellidoPaterno = document.getElementById(apellidoPaterno).value;
+    var apellidoMaterno= document.getElementById(apellidoMaterno).value;
+    var edad=parseInt(document.getElementById(edad).value);
+    var genero=document.getElementById(genero).value;
+    var profesion=document.getElementById(profesion).value;
+    var motivacion=document.getElementById(motivacion).value;
+}
+
+if (validarEdad(edad)) {
+  alert("Tu edad es válida.");
+} else {
+  alert("Tu edad no es válida.");
+}
+function between(value, inicial, final) {
+  return value >= inicial && value <= final;
+}
+
+function validarEdad(edad) {
+    if (isNaN(edad)) {
+      return false; // si no es un número, es inválido
+    }
+    if (edad < 18 || edad > 32) {
+      return false; // si la edad está fuera del rango, es inválido
+    }
+    return true; // la edad es válida
+  }
