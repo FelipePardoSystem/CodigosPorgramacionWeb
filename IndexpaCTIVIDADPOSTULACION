@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Funciones.js"></script>
+</head>
+<body>
+    Rut: <input type="text" id="rut" minlength="9" maxlength="10" placeholder="00.000.000-0" required> <br>
+    Nombre: <input type="text" id="nombre" minlength="3" maxlength="20"placeholder="Ingrese Nombre"required> <br>
+    Apellido Paterno:<input type="text" id="paterno"  minlength="3" maxlength="20" placeholder="Apellido Paterno"required> <br>
+    Apellido Materno: <input type="text" id="materno"  minlength="3" maxlength="20" placeholder="Apellido Materno"required> <br>
+    Fecha de Nacimiento: <input type="date" id="fechaNacimiento" placeholder="Fecha de Nacimiento" required> <br>
+    Edad: <input type="number" id="edad"  placeholder="Fecha de nacimiento"required> <br>
+    Genero: <select id="genero" onchange=ShowSelected(); required> <br>
+    <option value="Genero">Femenino</option>
+    <option value="Genero">Masculino</option>
+    <option value="Genero">Otro</option>
+    </select>
+    <br>
+    Email: <input type="text" id="correo" value="Correo"><br>
+    Celular: <input type="number" id="celular" minlength="9" maxlength="12"  placeholder="999999999"required><br>
+    Profesion: <input type="text" id="profesion" placeholder="Profesion" required> <br>
+    Motivacion: <textarea name="motivacion" id="motivacion" cols="30" rows="10" required></textarea>
+</body>
+</html>
